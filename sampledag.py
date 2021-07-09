@@ -21,6 +21,6 @@ default_args = {
 dag = DAG(ls_example', description='ls_example',
         schedule_interval='2 3 4 * *', default_args=default_args)
 t0 = BashOperator(task_id='jup_run',
-                bash_command="ls -la"
+                bash_command="ls -la",
                 dag=dag)
 t0
