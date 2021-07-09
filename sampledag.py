@@ -4,8 +4,6 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
 from airflow.operators.bash_operator import BashOperator
 from datetime import datetime, timedelta
-#from airflow.operators.datalab import EventBatchOperator
-#from event_batch_gdsp import EventBatchGDSPOperator
 
 seven_days_ago = datetime.combine(datetime.today() - timedelta(7),
                                 datetime.min.time())
